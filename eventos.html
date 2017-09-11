@@ -12,11 +12,11 @@
 	</head>
 	<body>
 		<nav class="bar bar-tab">
-			<a class="tab-item active" href="#">
+			<a class="tab-item" href="index.html">
 				<span class="icon icon-home"></span>
 				<span class="tab-label">Home</span>
 			</a>
-			<a class="tab-item" href="eventos.html">
+			<a class="tab-item active" href="#">
 				<span class="icon icon-search"></span>
 				<span class="tab-label">Eventos</span>
 			</a>
@@ -30,27 +30,38 @@
 			</a>
 		</nav>
 		<header class="bar bar-nav">
-			<h1 class="title">Próximos Eventos</h1>
+			<h1 class="title">Manpower Eventos</h1>
 		</header>
 		<div class="content">
 			<div class="slider">
 				<div class="slide-group">
-					<div class="slide">
-						<img src="img/mypath.jpeg" alt="MyPath" width="auto" height="300">
-					</div>
 					<div class="slide">
 						<img src="img/worldofwork.png" alt="WorldOfWork" width="640" height="300">
 					</div>
 				</div>
 			</div>
 			<ul class="table-view">
-				<li class="table-view-cell table-view-divider">Últimas Noticias</li>
-				<li class="table-view-cell media">
-					<a class="navigate-right" href="choose-theater.html" data-transition="slide-in">
-						<img class="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Argo's poster">
-						<div class="media-body">Bienvenido a nuestra web app<p>Lorem ipsum dolor sit amet, consectetur.</p></div>
-					</a>
-				</li>
+				<li class="table-view-cell table-view-divider">Próximos Eventos</li>
+				<div class="segmented-control">
+					<a class="control-item active" href="#item1mobile">Esta Semana</a>
+					<a class="control-item" href="#item2mobile">Este Mes</a>
+					<a class="control-item" href="#item3mobile">Todos</a>
+				</div>
+				<div class="card">
+					<span id="item1mobile" class="control-content active">
+						<ul class="table-view">
+							<li class="table-view-cell table-view-divider">Últimas Noticias</li>
+							<li class="table-view-cell media">
+								<a class="navigate-right" href="eventos.html" data-transition="slide-in">
+									<img class="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Argo's poster">
+									<div class="media-body">Bienvenido a nuestra web app<p>Lorem ipsum dolor sit amet, consectetur.</p></div>
+								</a>
+							</li>
+						</ul>
+					</span>
+					<span id="item2mobile" class="control-content">Item 2</span>
+					<span id="item3mobile" class="control-content">Item 3</span>
+				</div>
 			</ul>
 		</div>
 		<!--Menu-->
