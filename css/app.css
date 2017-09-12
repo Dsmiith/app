@@ -1,11 +1,22 @@
 .slider {
-  margin-bottom: 0;
+  margin-bottom: -10px;
 }
 
 .slider img {
-	height: 150px;
-  width: 100%;
+	height: 140px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+  width: auto;
 }
+
+.news-icon {
+	height: 64px;
+	width: auto;
+}
+
+
+
 
 .content-padded {
   margin: 30px 15px 15px;
