@@ -16,7 +16,7 @@
 				<span class="icon icon-home"></span>
 				<span class="tab-label">Home</span>
 			</a>
-			<a class="tab-item active" href="">
+			<a class="tab-item" href="eventos.html">
 				<span class="icon icon-search"></span>
 				<span class="tab-label">Eventos</span>
 			</a>
@@ -36,23 +36,18 @@
 			<div class="slider">
 				<div class="slide-group">
 					<div class="slide">
-						<img src="img/bridge.jpg" alt="WorldOfWork" width="640" height="300">
+						<img src="img/boat.jpg" alt="WorldOfWork" width="640" height="300">
 					</div>
 				</div>
 			</div>
 			<ul class="table-view">
-				<li class="table-view-cell table-view-divider">Próximos Eventos</li>
-				<div class="segmented-control">
-					<a class="control-item active" href="#semana">Esta Semana</a>
-					<a class="control-item" href="#mes">Este Mes</a>
-					<a class="control-item" href="#todos">Todos</a>
-				</div>
+				<li class="table-view-cell table-view-divider">EOS</li>
 				<div class="card">
 					<span id="semana" class="control-content active">
 						<ul class="table-view">
 							<!-- Insert elements here -->
 							<li class="table-view-cell media">
-								<a class="navigate-right" href="eventos.html" data-transition="slide-in">
+								<a class="navigate-right" href="#hectormarquezpitol" data-transition="slide-in">
 									<img class="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Argo's poster">
 									<div class="media-body">EOS<p>Lorem ipsum dolor sit amet, consectetur.</p></div>
 								</a>
@@ -78,5 +73,43 @@
 				</div>
 			</ul>
 		</div>
+    <!-- Profiles -->
+    <div id="hectormarquezpitol" class="modal">
+      <header class="bar bar-nav">
+        <a class="icon icon-close pull-right" href="#settingsModal"></a>
+        <h1 class="title">Settings</h1>
+      </header>
+      <div class="content">
+        <form class="input-group">
+          <input type="text" placeholder="Full name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Username">
+        </form>
+        <h5 class="content-padded">App settings</h5>
+        <ul class="table-view">
+          <li class="table-view-cell media">
+            <span class="media-object pull-left icon icon-sound"></span>
+            <div class="media-body">
+              Enable sounds
+            </div>
+            <div class="toggle">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+          <li class="table-view-cell media">
+            <span class="media-object pull-left icon icon-person"></span>
+            <div class="media-body">
+              Parental controls
+            </div>
+            <div class="toggle">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="content-padded">
+          <button class="btn btn-positive btn-block">Save settings</button>
+        </div>
+      </div>
+    </div><!-- /.modal -->
 	</body>
 </html>
