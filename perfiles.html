@@ -42,35 +42,68 @@
 			</div>
 			<ul class="table-view">
 				<li class="table-view-cell table-view-divider">Consulta De Perfiles Por Evento</li>
-				<div class="segmented-control">
-					<a class="control-item active" href="#week">Esta Semana</a>
-					<a class="control-item" href="#upcoming">Próximamente</a>
-					<a class="control-item" href="#old">Anteriores</a>
-				</div>
-				<div class="card">
-					<span id="week" class="control-content active">
-						<ul class="table-view">
-							<!-- Insert elements here -->
-							<li class="table-view-cell media">
-								<a class="navigate-right" href="eos.html">
-									<img class="media-object pull-left" src="http://placehold.it/64x64" alt="">
-									<div class="media-body">EOS<p>Consulta los perfiles del EOS 2017</p></div>
-								</a>
-							</li>
-						</ul>
-					</span>
-					<span id="upcoming" class="control-content active">
-						<ul class="table-view">
-							<!-- Insert elements here -->
-						</ul>
-					</span>
-					<span id="old" class="control-content">
-						<ul class="table-view">
-							<!-- Insert elements here -->
-						</ul>
-					</span>
-				</div>
+				<!-- Evento 1 -->
+				<li class="table-view-cell media">
+					<a class="navigate-right tab-item" href="#eos">
+						<img class="media-object pull-left" src="http://placehold.it/64x64" alt="">
+						<div class="media-body">...<p>...</p></div>
+					</a>
+				</li>
+				<!-- /Evento 1-->
 			</ul>
 		</div>
+		
+		
+		
+		
+		<!-- Evento 1 -->
+		<div id="eos" class="popover">
+			<header class="bar bar-nav">
+				<h1 class="title">Popover title</h1>
+			</header>
+			<ul class="table-view">
+				<li class="table-view-cell"><a href="#hectormarquezpitol">Hector Marquez Pitol</a></li>
+				<li class="table-view-cell">Persona 2</li>
+				<li class="table-view-cell">Persona 3</li>
+				<li class="table-view-cell">Persona 4</li>
+				<li class="table-view-cell">Persona 5</li>
+				<li class="table-view-cell">Persona 6</li>
+			</ul>
+		</div>
+		<!-- /Evento 1 -->
+		
+		
+		
+		
+		
+		<!-- Profiles -->
+		<div id="hectormarquez" class="modal">
+			<header class="bar bar-nav">
+				<a class="icon icon-close pull-right" href="#hectormarquez"></a>
+				<h1 class="title">Hector Marquez Pitol</h1>
+			</header>
+			<div class="content">
+				<div class="content-padded">
+					<h4>Hector Marquez Pitol</h4>
+					<h5>Director Comercial México y Centroamérica</h5>
+					<h6>Contacto</h6>
+					<form method="POST" action="http://formspree.io/hmarquez@manpowergroup.com.mx">
+						<input type="text" name="name" required placeholder="Nombre">
+						<input type="email" name="email" required placeholder="Email">
+						<textarea rows="5" name="message" required placeholder="Mensaje"></textarea>
+						<button type="submit" class="btn btn-positive btn-block btn-outlined">Enviar</button>
+					</form>
+				</div>
+				<div class="content-padded">
+					<button class="btn">
+						<a href="#hectormarquez"><span class="icon icon-left-nav"></span>Regresar</a>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- /Profile -->
+		
+		
+		
 	</body>
 </html>
