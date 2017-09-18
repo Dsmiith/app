@@ -3,11 +3,15 @@
 }
 
 .slider img {
-	height: 140px;
+	height: 100%;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
   width: 100%;
+}
+
+.tab-item {
+	max-height: 85px;
 }
 
 .news-icon {
